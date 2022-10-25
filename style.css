@@ -61,6 +61,7 @@ body {
 .decorative-form-container {
   background-color: white;
   padding-bottom: 30px;
+  box-shadow: 0 4px 8px -8px gray;
 }
 
 .decorative-form-container h1 {
@@ -107,7 +108,7 @@ body {
 }
 
 .form-input input:focus {
-  border: 2px solid rgb(87, 174, 198);
+  border: 1px solid rgb(87, 174, 198);
   box-shadow: 1px 1px 4px #888888; 
 }
 
@@ -117,7 +118,7 @@ body {
 }
 
 .form-input input:valid:not(:focus) {
-  border: 2px solid rgb(27, 130, 27);
+  border: 1px solid var(--accent-color);
   background-color: rgb(155, 224, 155);
 }
 
@@ -138,4 +139,14 @@ div .submit-button {
 
   color: white;
   background-color: var(--accent-color);
+}
+
+.log-in p {
+  padding-left: 30px;
+  padding-top: 10px;
+}
+
+.log-in p a {
+  text-decoration: none;
+  color: var(--accent-color);
 }
