@@ -105,15 +105,23 @@ body {
   padding: 5px;
 }
 
-.form-input input:invalid {
-  border: 2px solid rgb(198, 87, 87);
+.form-input input:focus {
+  border: 2px solid rgb(87, 174, 198);
+  box-shadow: 2px 2px 8px #888888; 
 }
 
-.form-input input:valid {
-  border: 2px solid rgb(27, 130, 27);
+.form-input input:invalid:not(:focus)::placeholder,
+.form-input input:valid:not(:focus)::placeholder {
+  color: rgb(222, 222, 222);
+  font-style: italic;
+}
+
+.form-input input:invalid:not(:focus) {
+  border: 2px solid rgb(239, 96, 96);
 }
 
 .form-input input:valid:not(:focus) {
+  border: 2px solid rgb(27, 130, 27);
   background-color: rgb(155, 224, 155);
 }
 
