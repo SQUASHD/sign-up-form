@@ -95,6 +95,7 @@ body {
 }
 
 .form-input input {
+  outline: none;
   appearance: none;
   height: 25px;
   width: 220px;
@@ -105,11 +106,15 @@ body {
 }
 
 .form-input input:invalid {
-  border: 1px solid red;
+  border: 2px solid rgb(198, 87, 87);
 }
 
 .form-input input:valid {
-  border: 1px solid green;
+  border: 2px solid rgb(27, 130, 27);
+}
+
+.form-input input:valid:not(:focus) {
+  background-color: rgb(155, 224, 155);
 }
 
 div .submit-button {
