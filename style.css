@@ -73,11 +73,15 @@ body {
   gap: 40px;
 }
 
-.left-inputs,
-.right-inputs {
+.row-container {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
 }
 
 .form-input {
