@@ -1,0 +1,128 @@
+:root {
+  --accent-color: #596D48;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #5D6063;
+  background-color: #EAEDF0;
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.3;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.main {
+  width: 60%;
+  height: 100%;
+  display: flex;
+}
+
+.sidebar {
+  width: 400px;
+  height: 100vh;
+  background-color: var(--accent-color);
+}
+
+.content {
+  width: 800px;
+  background-color: rgb(211, 218, 218);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.decorative-form-container,
+.hero-text {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.hero-text {
+  padding-top: 10vh;
+}
+
+.hero-text p {
+  margin-bottom: 20px;
+}
+
+.decorative-form-container {
+  background-color: white;
+  padding-bottom: 30px;
+}
+
+.decorative-form-container h1 {
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.column-container {
+  display: flex;
+  gap: 40px;
+}
+
+.left-inputs,
+.right-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.form-input label {
+  font-size: 12px;
+}
+
+.form-input input {
+  appearance: none;
+  height: 25px;
+  width: 220px;
+  background-color: #FFFFFF;
+  border: 1px solid #D6D9DC;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.form-input input:invalid {
+  border: 1px solid red;
+}
+
+.form-input input:valid {
+  border: 1px solid green;
+}
+
+div .submit-button {
+  padding-left: 30px;
+}
+
+.submit-button button[type="submit"] {
+  display: block;
+  appearance: none;
+  margin-top: 20px;
+	padding: 0;
+  width: 150px;
+  height: 30px;
+
+  border: none;
+  border-radius: 10px;
+
+  color: white;
+  background-color: var(--accent-color);
+}
